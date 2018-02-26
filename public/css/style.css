@@ -1,0 +1,506 @@
+/* Color Palette from:  https://color.adobe.com/it/Pueblo-Harvest-Final-color-theme-10456637/edit/?copy=true*/
+@import('//fonts.googleapis.com/css?family=Open+Sans');
+
+@font-face {
+	font-family: 'LogoFont';
+	src: url('../fonts/script-md-bold.eot');
+	src: url('../fonts/script-md-bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/script-md-bold.woff2') format('woff2'),
+		url('../fonts/script-md-bold.woff') format('woff'), 
+		url('../fonts/script-md-bold.ttf')  format('truetype'),
+		url('../fonts/script-md-bold.svg') format('svg');
+}
+
+* {
+	--header-color: #3d505d;
+	--primary-color: #9f3a37;
+	--secondary-color: #3d505d;
+}
+
+.clearfix:after { 
+	visibility: hidden; 
+	display: block; 
+	font-size: 0; 
+	content: " "; 
+	clear: both; 
+	height: 0; 
+}
+
+* html .clearfix             { zoom: 1; }
+*:first-child+html .clearfix { zoom: 1; }
+
+body, html {
+	margin: 0;
+}
+
+body {
+	font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', arial, sans-serif;
+	font-weight: lighter;
+}
+
+.sr-only {
+	display: none;
+}
+
+.show {
+	left: 0 !important;
+}
+
+.memodelete {
+	display: inline-block;
+}
+
+.error-heading,
+.error-message,
+.error-message a {
+	color: #723b3a;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.error-heading {
+    margin: 40px 0 30px 0;
+}
+
+.error-separator {
+	border: 2px solid #723b3a;
+}
+
+.error-message,
+.error-message a {
+	font-weight: normal;
+}
+
+.laramemo-header {
+	background-color: var(--header-color);
+	height: 65px;
+	width: 100%;
+	position: relative;
+	z-index: 99;
+	position: fixed;
+	top: 0;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+    user-select: none;
+}
+
+.laramemo-header h1 {
+	font-family: 'LogoFont', 'Open Sans', 'Helvetica Neue', 'Helvetica', arial, sans-serif;
+	margin: 0;
+	padding: 10px 20px;
+	color: #fff;
+	font-weight: lighter;
+	font-size: 35px;
+	display: inline-block;
+}
+
+.laramemo-header .avatar,
+.profile-img {
+	cursor: pointer;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	border-radius: 50%;
+}
+
+.laramemo-header .avatar {
+	position: absolute;
+	right: 20px;
+	top: 10px;
+	width: 45px;
+	height: 45px;
+	display: inline-block;
+}
+
+.laramemo-header .avatar-info {
+	height: 100vh;
+	width: 100%;
+	background-color: var(--secondary-color);
+	box-shadow: 0px 0px 10px #2e2e32;
+	position: absolute;
+	left: 2000px;
+	top: 65px;
+	transition: 90ms left ease-in-out;
+}
+
+.laramemo-header .avatar-info .avatar-info-inner .github img {
+	width: 150px;
+}
+
+.laramemo-header .avatar-info .avatar-info-inner .github .octocat {
+	display: block;
+	width: 150px;
+	margin: 0 auto;
+}
+
+.laramemo-header .avatar-info .avatar-info-inner .github h3,
+.laramemo-header .avatar-info .avatar-info-inner .github .forkme,
+.laramemo-header .avatar-info .avatar-info-inner .logout-link {
+	text-align: center;
+	color: #fff;
+	font-weight: lighter;
+}
+
+.laramemo-header .avatar-info .avatar-info-inner .github .forkme,
+.laramemo-header .avatar-info .avatar-info-inner .logout-link {
+	text-decoration: none;
+}
+
+.laramemo-header .avatar-info .avatar-info-inner .logout-link {
+	padding: 8px;
+	display: block;
+	width: 100px;
+	background-color: var(--primary-color);
+	border-radius: 3px;
+	position: relative;
+	top: 20px;
+	border: 3px solid #723b3a;
+	font-size: 18px;
+	font-weight: 400;
+	margin: 0 auto;
+	transition: 90ms background-color ease-in-out,
+				90ms border ease-in-out;
+}
+
+.laramemo-header .avatar-info .avatar-info-inner .logout-link:hover {
+	background-color: #723b3a;
+}
+
+.laramemo-header .avatar-info .avatar-info-inner .logout-link:active {
+	background-color: #4d2e2d;
+	border: 3px solid #4d2e2d;
+}
+
+.laramemo-header .avatar-info .avatar-info-inner {
+	height: 30%;
+}
+
+.laramemo-header .avatar-info .avatar-info-inner .profile-info {
+	height: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #2a3944;
+	margin-bottom: 40px;
+}
+
+.laramemo-header .avatar-info .avatar-info-inner .profile-info .user-info span {
+	display: block;
+	color: #fff;
+}
+
+.laramemo-header .avatar-info .fa-arrow-up {
+	position: absolute;
+	top: -10px;
+	right: 0;
+	font-size: 30px;
+	color: var(--secondary-color);
+}
+
+.laramemo-header .avatar-info .avatar-info-inner .profile-img {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	position: relative;
+	margin-right: 50px;
+	box-shadow: 3px 3px 20px #000;
+}
+
+.laramemo-header .avatar-info .avatar-info-inner .profile-img:hover::after {
+	content: '\f030';
+	font-family: FontAwesome;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	color: #fff;
+	font-size: 30px;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	opacity: .6;
+	background-color: #000;
+}
+
+.laramemo-header .avatar-info .avatar-info-inner .profile-img:active::after {
+	opacity: .8;
+}
+
+.laramemo-header .avatar-info .avatar-info-inner .profile-img .filetype {
+	display: block;
+	background-color: red;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right: 0;
+	z-index: 100;
+	opacity: 0;
+}
+
+.LaraMemo {
+	background-color: var(--primary-color);
+	min-height: calc(100vh - 55px);
+	padding-top: 55px;
+}
+
+.LaraMemo-wrapper {
+	width: 90%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.signup {
+	height: 100%;
+	width: 100%;
+	display: table;
+}
+
+.signup-wrapper {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.signup h1,
+.dashboard h1 {
+	margin: 0;
+	color: #fff;
+	font-weight: lighter;
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+.signup h1 {
+	padding-top: 50px;
+}
+
+.signup form input,
+.signup form button,
+.LaraMemo .createMemo-wrapper form input,
+.LaraMemo .createMemo-wrapper form textarea {
+	border: none;
+	background-color: transparent;
+	color: #fff;
+	font-size: 13pt;
+	font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', arial, sans-serif;
+}
+
+.signup form input:not([type="checkbox"]),
+.LaraMemo .createMemo-wrapper form textarea,
+.LaraMemo .createMemo-wrapper form input:not([type="submit"]) {
+	border-bottom: 2px solid #fff;
+	display: inline-block;
+	width: 70%;
+	margin: 10px 0;
+	padding: 10px;
+}
+
+.signup form button,
+.LaraMemo .createMemo-wrapper form input[type="submit"] {
+	border: 2px solid #fff;
+	padding: 10px 20px;
+	margin-top: 20px;
+	cursor: pointer;
+	border-radius: 5px;
+	transition: 90ms background-color ease-in-out,
+				90ms color ease-in-out;
+}
+
+.signup form button:hover,
+.LaraMemo .createMemo-wrapper form input[type="submit"]:hover {
+	background-color: #fff;
+	color: #000;
+}
+
+.signup form .label-style {
+	text-align: center;
+	color: #fff;
+	display: inline-block;
+	margin: 20px 0 10px 0;
+}
+
+.signup .already-registered p,
+.signup .already-registered p a {
+	color: #fff;
+	margin-top: 60px;
+}
+
+.dashboard .tabs {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-around;
+	margin: 0 0 30px 0;
+} 
+
+.dashboard .tabs .tabs-tab {
+	width: 100%;
+	text-align: center;
+}
+
+.dashboard .tabs .tabs-tab a {
+	text-decoration: none;
+	color: #333;
+	display: block;
+	padding: 10px;
+	font-size: 17px;
+	background-color: #fff;
+}
+
+.dashboard .tabs .tabs-tab .active {
+	background-color: var(--header-color);
+	color: #fff;
+}
+
+.dashboard .tabs .tabs-tab:first-child a {
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+
+.dashboard .tabs .tabs-tab:last-child a {
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+
+.dashboard h1 {
+	padding: 50px 0;
+}
+
+.dashboard .dash-cards .dash-card {
+	width: 100%;
+	background-color: #fff;
+	border-radius: 10px;
+}
+
+.dashboard .dash-cards .dash-card:not(:first-child) {
+	margin-top: 20px;
+}
+
+.dashboard {
+	padding-bottom: 20px;
+}
+
+.dashboard .dash-cards .dash-card .dash-card-header {
+	padding: 15px 15px 0px 15px;
+	position: relative;
+}
+
+.dashboard .dash-cards .dash-card .dash-card-header h4 {
+	display: inline-block;
+	margin: 0;
+	font-weight: 400;
+}
+
+.dashboard .dash-cards .dash-card .dash-card-header .date {
+	position: absolute;
+	right: 20px;
+	font-size: 13px;
+	padding: 3px;
+}
+
+.dashboard .dash-cards .dash-card .dash-card-header hr {
+	border: 1px solid #e3e3e3;
+	margin-top: 10px;
+}
+
+.dashboard .dash-cards .dash-card .dash-card-content p {
+	margin: 0;
+	padding: 0 15px 15px 15px;
+	line-height: 25px;
+	font-size: 14px;
+}
+
+.dashboard .dash-cards .dash-card .dash-card-footer {
+	text-align: right;
+	padding: 0 15px 15px 0;
+}
+
+.dashboard .dash-cards .dash-card .dash-card-footer .fa {
+	color: transparent;
+	padding: 0 6px;
+	font-size: 19px;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #000;
+}
+
+.dashboard .dash-cards .dash-card .dash-card-footer .fa-heart:hover,
+.liked {
+	-webkit-text-stroke-width: 3px !important;
+	-webkit-text-stroke-color: #723b3a !important;
+}
+
+.dashboard .dash-cards .dash-card .dash-card-footer .fa-pencil:hover,
+.dashboard .dash-cards .dash-card .dash-card-footer .fa-trash:hover {
+	color: #723b3a;
+	-webkit-text-stroke-width: 0;
+}
+
+.dashboard .dash-cards .dash-card .dash-card-footer .fa-pencil {
+	display: inline-block;
+	transform: rotate(90deg);
+	transform: scaleX(-1);
+}
+
+.create-LaraMemo {}
+
+.create-LaraMemo .add-memo {
+	position: fixed;
+	left: 30px;
+	bottom: 30px;
+	background-color: var(--header-color);
+	padding: 16px;
+	border-radius: 50%;
+	font-size: 20px;
+	color: #fff;
+	font-weight: bolder;
+	transition: 90ms transform;
+}
+
+.create-LaraMemo .add-memo:hover {
+	background-color: #2a3944;
+}
+
+.LaraMemo .createMemo-wrapper {
+	text-align: center;
+}
+
+.LaraMemo .createMemo-wrapper form input,
+.LaraMemo .createMemo-wrapper form textarea {
+	border: 2px solid #fff;
+}
+
+.LaraMemo .createMemo-wrapper form textarea {
+	resize: none;
+}
+
+.LaraMemo .createMemo-wrapper form input[type="submit"] {
+	padding: 10px 20px;
+	font-size: 14px;
+	text-transform: uppercase;
+	margin-top: 0;
+	border-radius: 0;
+}
+
+.createMemo-wrapper {
+	margin-top: 40px;
+}
+
+@media (min-width: 767px) {
+	.LaraMemo-wrapper {
+		width: 60%;
+	}
+}
+
+@media (max-width: 417px) {
+	.dashboard .dash-cards .dash-card .dash-card-header span {
+		display: none;
+	}	
+}

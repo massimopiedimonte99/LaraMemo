@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-EN">
+<head>
+	<!-- Metatags -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Massimo Piedimonte">
+	<!-- CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<!-- Title -->
+	<title>Design of LaraMemo - Dashboard</title>
+</head>
+<body>
+    <header class="laramemo-header">
+        <h1>LaraMemo</h1>
+        <div class="avatar"></div>
+        <div class="avatar-info">
+            <div class="avatar-info-inner clearfix">
+                <div class="profile-info clearfix">
+                    <div class="profile-img"></div>
+                    <div class="user-info">
+                        <span><b>Username</b>: Alex</span>
+                        <span><b>Memo</b>: 30</span>
+                        <span><b>Favourites</b>: 21</span>
+                    </div>
+                </div>
+                <div class="github">
+                    <a href="#" class="octocat">
+                        <img src="assets/img/Octocat.png" alt="Fork me on Github" />
+                    </a>
+                    <h3>Fork me on <a href="https://github.com/mynameismaz" class="forkme"><b>Github</b></a>!</h3>
+                </div>
+                <a class="logout-link" href="#">Logout</a>
+            </div>
+        </div>
+    </header>
+    <div class="LaraMemo">
+        <div class="LaraMemo-wrapper createMemo-wrapper">
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="title" class="sr-only">Title</label>
+                    <input type="text" name="title" placeholder="Title" />
+                </div>
+                <div class="form-group">
+                    <label for="memo_content" class="sr-only">Content for your Memo</label>
+                    <textarea name="memo_content" placeholder="Content"></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="submit-btn" value="Submit" />
+                </div>
+            </form>
+        </div><!-- /.LaraMemo-wrapper -->
+        <div class="create-LaraMemo">
+            <a href="dashboard.html"><span class="fa fa-times add-memo"></span></a>
+        </div>
+    </div><!-- /.LaraMemo -->
+
+    <!-- Javascript -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
