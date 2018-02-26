@@ -9,9 +9,7 @@ Fully functional Laravel 5.4 application, create your first memo today!
 
 To get started with **LaraMemo**, you just need to create a database and edit the _.env_ file according to your setup!
 
-Then, open a new terminal, go into your project folder and type the following:
-
-` php artisan migrate `
+Then, open a new terminal, go into your project folder and type the following: ` php artisan migrate `
 
 
 ## Contribute
