@@ -2,15 +2,17 @@
 
 Fully functional Laravel 5.4 application, create your first memo today!
 
+<img src="https://image.ibb.co/dDFRsc/screen_1.png" />
+<img src="https://image.ibb.co/gQcNXc/screen_2.png" />
+
 ## Get started
 
-To get started with LaraMemo, you just need to create a database and edit the ".env" file according to your setup!
+To get started with **LaraMemo**, you just need to create a database and edit the _.env_ file according to your setup!
 
 Then, open a new terminal, go into your project folder and type the following:
 
-´
-php artisan migrate
-´
+` php artisan migrate `
+
 
 ## Contribute
 
@@ -18,5 +20,10 @@ Your contribution is very welcomed whether you find a bug or you have suggestion
 
 ## Tecnologies
 
-[jQuery](https://github.com/jquery)
-[Laravel 5.4](https://github.com/laravel/laravel)
+* [jQuery](https://github.com/jquery)
+* [Laravel 5.4](https://github.com/laravel/laravel)
+
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
